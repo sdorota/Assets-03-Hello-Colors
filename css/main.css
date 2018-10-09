@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box; }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#main-nav ul {
+    padding-top: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    font-family: 'Prata', serif;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 5px;
+    color: rgb(117, 227, 221);
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid red;
+}
+
+#header1,
+#header2,
+#header3 {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left 30px bottom 30px;
+    justify-content: flex-end;
+}
+#header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    background-color: rgb(0, 49, 112);
+    background-image: url(../hello-colors/assets/h.svg);
+    color: white;
+}
+
+#header2,
+#header3 {
+    flex-basis: 25%;
+    background-size: auto 40%;
+}
+
+#header2 {
+    background-color: rgb(117, 227, 221);
+    background-image: url(../hello-colors/assets/d.svg);
+    color: #16736e;
+}
+
+#header3 {
+    background-color: rgb(244, 151, 156);
+    background-image: url(../hello-colors/assets/p.svg);
+    color: #be4249;
+}
+
+.header-text {
+    display: flex;
+}
+
+.header-text p{
+    text-align: right;
+    align-self: flex-end;
+    font-size: 18px;
+    padding: 0 10px 15px 10px;
+}
+#header1-text h1 {
+    font-size: 126px;
+    text-align: right;
+    margin: 0;
+    padding:0;
+    font-family: 'Prata', serif;
+    font-weight: 100;
+    letter-spacing: 16px;
+}
+
+#header1-text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-right: 20px;
+}
+
+hr {
+    width: 92%;
+    background-color: #ffffff;
+    margin-top: -20px;
+    padding: 0;
+    height: 8px;
+}
+
+#scroll-text {
+    text-align: center;
+    color: #2864b1;
+}
+
+/* portfolio-start */
+#portfolio {
+    margin: 0 16.5%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio-title {
+    color: #41ccc4;
+    font-size: 100px;
+    font-family: 'Prata', serif;
+    letter-spacing: 20px;
+}
+
+.article-work {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-photo,
+.article-text {
+    flex-basis: 50%;
+}
+
+.article-text {
+    color: #16736e;
+    padding: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#text2 {
+    text-align: right;
+}
+
+.article-text h3 {
+    font-size: 40px;
+    font-family: 'Prata', serif;
+    margin: 0;
+}
+
+.article-text a {
+    color: #41ccc4;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.article-photo{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    flex-basis: 50%;
+}
+
+#photo1 {
+    background-image: url(../hello-colors/assets/pineapp.jpg);
+}
+
+#photo2 {
+    background-image: url(../hello-colors/assets/healthydining.jpg);
+}
+
+#photo3 {
+    background-image: url(../hello-colors/assets/smartcity.jpg)
+}
+
+.article-photo::before {
+    font-family: 'Prata', serif;
+    color: #16736e;
+    background-image:linear-gradient(#41ccc4 50%, transparent 50%);
+    font-size: 30px;
+    display: inline-block;
+}
+
+#photo1::before,
+#photo3::before {
+    content: "branding & web";
+    transform: rotate(-90deg);
+    margin-left: -110px;
+    margin-top: 80px;
+}
+
+#photo2::before {
+    content: "branding & mobile";
+    transform: rotate(90deg);
+    margin-left: 310px;
+    margin-top: 96px;
+    width: 60%;
+}
+
+#portfolio2 {
+    flex-direction: row-reverse;
+}
+
+/* team - start */
+#team {
+    display: flex;
+    flex-direction: column;
+}
+
+#team-title {
+    color:rgb(0, 49, 112);
+    font-size: 100px;
+    font-family: 'Prata', serif;
+    letter-spacing: 20px;
+    margin-left: 16%;
+}
+
+#team-article{
+    display: flex;
+    flex-direction: row;
+}
+
+#team-photo,
+#team-text {
+    flex-basis: 50%;
+}
+
+#team-photo {
+    background-image: url(../hello-colors/assets/team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#team-photo::before {
+    display: inline-block;
+    content:"Meet our creative team: Joanna, Markus, Elisabeth, George & Micheal.";
+    color:white;
+    display: flex;
+    text-align: left;
+    justify-content: center; 
+    padding: 30px;
+    width: 210px;
+    margin: auto;
+}
+
+#team-text{
+    padding-right: 16.5%;
+    padding-left: 20px;
+}
+
+#team-text h3 {
+    color: rgb(36, 104, 176);
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Prata', serif;
+}
+
+#team-text p {
+    font-size: 14px;
+}
+
+#about-next {
+    font-weight: bold;
+}
+
+/* contact-start */
+#contact {
+    width: 100%;
+}
+
+#contact-title {
+    color: rgb(243, 116, 123);
+    font-size: 100px;
+    font-family: 'Prata', serif;
+    letter-spacing: 10px;
+    margin-left: 16%;
+}
+
+#contact-form{
+   display: flex;
+   flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+input[type="email"],
+input[type="text"]{
+    border: none;
+    border-bottom: 5px solid rgb(243, 116, 123);
+    padding: 20px 0px 10px 10px;
+    margin-left: 32%;
+    margin-right: 16%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: rgb(243, 116, 123);
+}
+
+#contact-photo {
+    display: flex;
+    flex-basis: 50%;
+
+}
+
+#contact-photo img {
+    flex-basis: 50%;
+    max-width: 100%;
+
+}
+
+#contact-photo figcaption {
+    flex-basis: 50%;
+    margin: 15px;
+}
+
+#contact-info {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 120px;
+    margin-top: 20px;
+    font-size: 25px;
+    align-self: center;
+    margin-left: 16%;
+    background-color: #fff;
+    border: 2px solid rgb(244, 151, 156);
+    color: rgb(243, 116, 123);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    border: 3px solid red;
+    color: red;
+}
+
+/* footer start */
+#main-footer {    
+    background-color: rgb(244, 151, 156);
+    margin-top: 50px;
+    min-height: 20vh;
+    max-height: 36vh;
+    z-index: 1;
+    position: relative;
+}
+
+#main-footer::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../hello-colors/assets/socialmedia.svg);
+    height: 135px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    margin: -30px auto -10px auto;
+
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 0px 20px;
+}
+
+#social-media a {
+    padding: 20px 20px 0px 20px;
+}
+
+#social-media i {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    color: rgb(244, 151, 156);
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    margin: 1%;
+}
+
+#social-media i:hover{
+    color: red;
+}
+
+#footer-text {
+    color: #fff;
+    position: absolute;
+    margin-left: 16.5%;
+    padding-top:40px;
+}
